@@ -1,9 +1,45 @@
-body {
+h1 {
     text-align: center;
 }
-#dragon {
+#images1 {
+    display: flex;
+    justify-content: space-around;
+}
+#fumée {
     float: left;
+    margin-left: 5.5%;
 }
-#alcoolique {
-    
+#vodka {
+    float: left;
+    margin-left: 13%;
 }
+#dragibus {
+    float:left ;
+    margin-left: 14%;
+}
+#diablo {
+    float: left;
+    margin-left: 15%;
+}
+
+#images2 {
+    display: flex;
+    justify-content: space-around;
+}
+#papanoel {
+    float: left;
+    margin-left: 5%;
+}
+#tenebres {
+    float: left;
+    margin-left: 12.5%;
+}
+#curry {
+    float:left ;
+    margin-left: 12%;
+}
+#parrain {
+    float: left;
+    margin-left: 12.5%;
+}
+
