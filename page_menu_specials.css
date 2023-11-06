@@ -1,19 +1,23 @@
 body {
     text-align: center;
 }
-#dragon {
-    position: absolute;
-    left: 10%;
+figcaption {
+    display: flex;
+    justify-content: space-around;
 }
-#alcoolique {
-    position: absolute;
-    left:   30%;
+#fumée {
+    float: left;
+    margin-left: 5.5%;
 }
-#Dragibus {
-    position: absolute;
-    left: 50%;
+#vodka {
+    float: left;
+    margin-left: 13%;
 }
-#diable {
-    position: absolute;
-    left: 70%;
+#dragibus {
+    float:left ;
+    margin-left: 14%;
+}
+#diablo {
+    float: left;
+    margin-left: 15%;
 }
