@@ -2,14 +2,18 @@ body {
     text-align: center;
 }
 #dragon {
-    float: left;
+    position: absolute;
+    left: 10%;
 }
 #alcoolique {
-    float: left;
+    position: absolute;
+    left:   30%;
 }
 #Dragibus {
-    float: left;
+    position: absolute;
+    left: 50%;
 }
 #diable {
-    float: right ;
+    position: absolute;
+    left: 70%;
 }
