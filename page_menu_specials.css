@@ -1,7 +1,7 @@
 body {
     text-align: center;
 }
-figcaption {
+#images1 {
     display: flex;
     justify-content: space-around;
 }
@@ -21,6 +21,24 @@ figcaption {
     float: left;
     margin-left: 15%;
 }
-#prix {
-    margin-right: 67%;
+
+#images2 {
+    display: flex;
+    justify-content: space-around;
+}
+#papanoel {
+    float: left;
+    margin-left: 5%;
+}
+#tenebres {
+    float: left;
+    margin-left: 12.5%;
+}
+#curry {
+    float:left ;
+    margin-left: 12%;
+}
+#parrain {
+    float: left;
+    margin-left: 13%;
 }
