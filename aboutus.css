@@ -38,7 +38,7 @@ body {
     text-align: center;
   }
 
-  .about-section p {color: white; font-size: 25px;}
+  .about-section p {color: white; font-size: 2vw;}
 
   .container {
     padding: 16px;
@@ -54,8 +54,8 @@ body {
     color: rgb(131, 127, 127, 0.438);
   }
 
-  h1{font-size: 45px; font-family: 'Lily Script One';}
-  h2{font-size: 30px;}
+  h1{font-size: 3vw;}
+  h2{font-size: 3vw;}
   
   .button {
     border: none;
