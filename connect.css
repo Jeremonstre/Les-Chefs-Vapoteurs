@@ -1,16 +1,37 @@
+@font-face {
+    font-family: "Lily";
+    src: url(./Fonts/LilyScriptOne-Regular.ttf);
+}
+
+body {
+    font-family: "Lily";
+}
+
 #formulaire {
     display: flex;
     justify-content: space-evenly;
+}
    
 .connect {
     width: 250px;
-    height: 230px;
+    height: 250px;
     padding: 25px;
     border: 5px solid ;
 }
 .create {
     width: 300px;
-    height: 450px;
+    height: 480px;
     padding: 25px;
     border: 5px solid 
+}
+
+.submit {
+    background-color: black;
+    color: whitesmoke;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: fantasy;
+    width: 40%;
+    font-family: "Lily";
 }
