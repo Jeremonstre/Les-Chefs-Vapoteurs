@@ -23,18 +23,26 @@ body {
     margin: 8px;
     border-radius: 25px;
   }
-  
-  .about-section {
-    padding: 10px;
-    text-align: center;
-    background-color: #000000;
-    color: white;
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.700);
   }
 
-  .about-section p {color: white; font-size: 25px; text-align: center;}
-  
+  .about-section {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+    width: 70vw;
+  }
+
+  .about-section p {color: white; font-size: 25px;}
+
   .container {
-    padding: 0 16px;
+    padding: 16px;
   }
   
   .container::after, .row::after {
