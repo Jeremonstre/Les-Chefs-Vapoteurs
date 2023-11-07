@@ -21,6 +21,7 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    margin-top: 25px;
     border-radius: 25px;
   }
 
@@ -29,14 +30,12 @@ body {
   }
 
   .about-section {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
     padding: 10px;
     background-color: #000000;
     color: white;
     border-radius: 25px;
-    width: 70vw;
+    margin-bottom: 25px;
+    text-align: center;
   }
 
   .about-section p {color: white; font-size: 25px;}
