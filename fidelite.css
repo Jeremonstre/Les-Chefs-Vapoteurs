@@ -3,3 +3,6 @@
     src: url(./Fonts/LilyScriptOne-Regular.ttf);
 }
 
+h1 {
+    text-align: center;
+}
