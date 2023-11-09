@@ -14,13 +14,13 @@ body {
    
 .connect {
     width: 300px;
-    height: 250px;
+    height: 300px;
     padding: 25px;
     border: 5px solid ;
 }
 .create {
     width: 250px;
-    height: 480px;
+    height: 700px;
     padding: 25px;
     border: 5px solid 
 }
@@ -31,7 +31,7 @@ body {
     border-style: none;
     border-radius: 10px;
     padding: 10px;
-    width: 40%;
+    width: 60%;
     font-family: "Lily";
 }
 #connexion {
