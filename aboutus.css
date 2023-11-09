@@ -23,6 +23,7 @@ body {
     margin: 8px;
     margin-top: 25px;
     border-radius: 25px;
+    position: static;
   }
 
   .card:hover {
