@@ -103,7 +103,7 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    width: 100%;
+    width: 300px;
     color: #ffffff;
     display: block;
     transition: 0.5s;
@@ -117,7 +117,7 @@ body {
     top: 0;
     left: 0;
     opacity: 1;
-    width: 100%;
+    width:300px;
     color: #ffffff;
     display: block;
     padding: 0 30px;
@@ -128,11 +128,14 @@ body {
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
     border-radius: 25px;
-    width: 400px;
 }
 
 #flip{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.logos {
+  margin-top: 8px;
 }
