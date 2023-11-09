@@ -24,6 +24,7 @@ body {
     margin-top: 25px;
     border-radius: 25px;
     position: static;
+    transition: all 0.5s;
   }
 
   .card:hover {
@@ -58,24 +59,6 @@ body {
   h1{font-size: 3vw;}
   h2{font-size: 3vw;}
   
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-family: 'Lily Script One';
-    border-radius: 25px;
-  }
-  
-  .button:hover {
-    background-color: #5555557e;
-  }
-  
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -93,3 +76,63 @@ body {
     border-radius: 25px;
     width: 1480px;
   }
+
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lily Script One';
+}
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+    transition: 1s;
+    position: absolute;
+    background: #000000;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    border-radius: 25px;
+}
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 1s;
+    position: relative;
+    background: #000000;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    border-radius: 25px;
+    width: 400px;
+}
+
+#flip{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
