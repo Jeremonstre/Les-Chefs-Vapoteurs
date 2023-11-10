@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    text-decoration: underline
+}
+
+.infos {
+    justify-content: center; 
+    display: flex;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h5 {
+    text-align: center;
+    text-decoration: underline;
+}
