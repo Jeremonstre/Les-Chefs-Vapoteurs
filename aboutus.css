@@ -24,11 +24,19 @@ body {
     margin-top: 25px;
     border-radius: 25px;
     position: static;
-    transition: all 0.5s;
+    transition: all 1s;
   }
 
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.700);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  img:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
   }
 
   .about-section {
@@ -67,12 +75,12 @@ body {
   }
 
   img {    
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px;
+    transition: all 1s;
   }
 
   hr.rounded {
-    border-top: 8px solid #000000;
+    border-top: 8px solid black;
     border-radius: 25px;
     width: 1480px;
   }
