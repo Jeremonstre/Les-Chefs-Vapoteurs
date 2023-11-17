@@ -4,7 +4,7 @@ h1 {
 }
 
 .sav {
-    
+    justify-content: center;
     display: flex;
 }
 
@@ -21,4 +21,11 @@ h2 {
 h5 {
     text-align: center;
     text-decoration: underline;
+}
+.infos {
+    text-align: center;
+    justify-content: center;
+}
+.submit {
+    margin-top: 450px;
 }
