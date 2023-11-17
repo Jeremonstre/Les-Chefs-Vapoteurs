@@ -1,3 +1,35 @@
 h2 {
     text-align: center;
 }
+h3 {
+    text-align: center;
+}
+figure {
+    margin-left: 20%;
+}
+hr {
+    border: 4px solid black;
+
+}
+#pa {
+    margin-right:20%;
+}
+
+#barbe {
+    margin-right: 30%;
+    width: 20;
+}
+
+#présentation {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+
+.card-img-to {
+    height: 90px;
+    width: 90px;
+    
+}
+
