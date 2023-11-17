@@ -13,7 +13,7 @@ body {
   
   .column {
     float: left;
-    width: 33.3%;
+    width: 30%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -33,7 +33,7 @@ body {
     transform: scale(1.05);
   }
 
-  img:hover {
+  #cimg:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
@@ -48,7 +48,8 @@ body {
     text-align: center;
   }
 
-  .about-section p {color: white; font-size: 2vw;}
+  .about-section p {color: white; font-size: 1.5vw;}
+  .card p {font-size: 1vw;}
 
   .container {
     padding: 16px;
@@ -74,21 +75,15 @@ body {
     }
   }
 
-  img {    
+  #cimg {    
     border-radius: 25px;
     transition: all 1s;
   }
 
-  hr.rounded {
-    border-top: 8px solid black;
-    border-radius: 25px;
-    width: 1480px;
-  }
-
-
 .btn-flip {
     opacity: 1;
     outline: 0;
+    width: 100%;
     color: #fff;
     line-height: 40px;
     position: relative;
@@ -111,7 +106,7 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    width: 300px;
+    width: 100%;
     color: #ffffff;
     display: block;
     transition: 0.5s;
@@ -125,10 +120,10 @@ body {
     top: 0;
     left: 0;
     opacity: 1;
-    width:300px;
+    width:100%;
     color: #ffffff;
     display: block;
-    padding: 0 30px;
+    padding: 0 80px;
     line-height: 40px;
     transition: 0.5s;
     position: relative;
