@@ -36,3 +36,8 @@
   nav a:hover{color:white; border-bottom: 2px solid white; border-top: 2px solid white; margin: 0;}
   nav input[type=text] {float: right;padding: 6px;border: none;margin-bottom: 15px; margin-top: 15px;margin-right: 2%; border-radius: 25px;font-size: 17px;font-family: 'Lily Script One';}
   
+  .bi.bi-person-add{
+    position: relative;
+    margin-left: 90rem;
+    top: 25%;
+  }
