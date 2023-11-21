@@ -13,53 +13,53 @@
     <div id="id01" class="modal">
       
       <form class="modal-content animate" action="/action_page.php" method="post">
-        <div class="imgcontainer">
+        <div class="imgcontainer"><h1>Connexion</h1>
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="./images/chef qui vapote.jpg" alt="Avatar" class="avatar">
+          <img src="./images/logo.png" alt="logo" class="avatar">
         </div>
     
         <div class="container">
           <label for="uname"><b>Nom d'Utilisateur</b></label>
-          <input id="plh" type="text" placeholder="Nom d'Utilisateur" name="uname" required>
+          <input id="plh" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
     
           <label for="psw"><b>Mot de Passe</b></label>
-          <input id="plh" type="password" placeholder="Mot de Passe" name="psw"  required>
+          <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"  required>
             
           <button id="plh" type="submit">Connexion</button>
           <label>
-            <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
+            <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
           </label>
-        </div>
-    
-        <div class="cont" style="background-color:black">
-          <button id="plh" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
-          <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
         </div>
       </form>
       <form class="modal-content animate" action="/action_page.php" method="post">
-        <div class="imgcontainer">
+        <div class="imgcontainer"><h1>Inscription</h1>
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="./images/chef qui vapote.jpg" alt="Avatar" class="avatar">
+          <img src="./images/logo.png" alt="Avatar" class="avatar">
         </div>
     
         <div class="container">
+          <label for="mail"><b>E-mail</b></label>
+          <input id="plh" type="email" placeholder="E-mail..." name="mail" required>
+          
           <label for="uname"><b>Nom d'Utilisateur</b></label>
-          <input id="plh" type="text" placeholder="Nom d'Utilisateur" name="uname" required>
+          <input id="plh" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
     
           <label for="psw"><b>Mot de Passe</b></label>
-          <input id="plh" type="password" placeholder="Mot de Passe" name="psw"  required>
+          <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
+
+          <label for="uname"><b>Date de naissance</b></label>
+          <input id="plh" type="date"  name="birth" required>
             
-          <button id="plh" type="submit">Connexion</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
-          </label>
-        </div>
-    
-        <div class="cont" style="background-color:black">
-          <button id="plh" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
-          <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
+          <button id="plh" type="submit">Je m'inscris</button>
         </div>
       </form>
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>Lettres</b>Minuscules</p>
+        <p id="capital" class="invalid">A <b>Lettres</b> Majuscules</p>
+        <p id="number" class="invalid">A <b>nombres</b></p>
+        <p id="length" class="invalid">Minimum <b>8 caractères</b></p>
+      </div>
     </div>
 
     <script>
