@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href=".//images/logo.ico">
-  <title>Les Chefs Vapoteurs - Accueil</title>
+  <title>Les Chefs Vapoteurs - infos-perso</title>
+  <link rel="stylesheet" href="infos-perso.css">
   <link href="header.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
-  <link href="/Fonts/fonts.css" rel="stylesheet" type="text/css" />
+  <link href="./Fonts/fonts.css" rel="stylesheet" type="text/css" />
   <link href="footer.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="./Neige/neige.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -19,6 +20,7 @@
 <body>
   <div id="header">
     <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200">
+    <img id="promo" src="./images/promo.png" alt="-20%" width="200" height="200">
   </div>
   <nav id="menu">
     <ul>
@@ -30,65 +32,63 @@
       <li><a href="./connect.html">Mon Compte</a></li>
       <div class="search-container">
         <form action="#">
-          <input type="text1" placeholder="Rechercher..." name="search">
+          <input type="text" placeholder="Rechercher..." name="search">
         </form>
       </div>
     </ul>
   </nav>
-  <br>
+<div class="all">
+    <div id="perso">
+<div class="infos">
+    <h2 id="titre">
+        infos
+    </h2> <br>
+<h5 id="nom">
+    nom: <br> <br>
+    prenom : <br> <br>
+    mail : <br> <br>
+    date de naissance : <br><br>
+</h5> <br><br>
 
+<h5 id="abo">
+    abonnement : 
+</h5>
+</div>
 
+<div class="fid">
+    <h5>
+        recap points fid  : 
+    </h5> <br><br><br><br><br><br>
+    <h5>
+        mon moyen de paiement 
+    </h5> <br><br><br>
+</div>
+</div>
+<br><br><br>
 
-    <h2>L'offre du moment ! <img src="./images/père noel.jpg" height="100" width="100" alt=""></h2>
-    <br>
-
-    <div class="card mb-3 bg-black mx-auto position-static" style="max-width: 500px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./images/gout noel.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title text-white">E-liquide "Barbe du père noel</h5>
-            <p class="card-text text-white">>Retrouvez le goût "Barbe du père Noel" en edition limité du 20/11 au 25/12!</p>
-            <p class="card-text text-white">11,99€</p>
-            <a href="#" class="btn btn-primary text-white">Ajouter au Panier</a>
-          </div>
-        </div>
-      </div>
-    </div>
-<br><br><br><br><br><br><br>
-  <div id="présentation">
-
-    <div class="card position-static bg-black text-white" style="width: 27rem; height: 12rem;">
-      <img src="./images/menu.jpg" class="card-img-to" alt="...">
-      <div class="card-body text-white">
-        <h5 class="card-title text-white">Les Plats du Chef !</h5>
-        <p class="card-text text-white">Rétrouvez les meilleurs repas concoctés par nos chefs !</p>
-
-      </div>
-    </div>
-    <div class="card position-static bg-black text-white" style="width: 27rem; height: 12rem;">
-      <img src="./images/la cuisine.jpg" class="card-img-to" alt="...">
-      <div class="card-body">
-        <h5 class="card-title text-white">Best Sellers</h5>
-        <p class="card-text text-white">Retrouvez vos plats préférés !</p>
-
-      </div>
-    </div>
-    <div class="card position-static bg-black text-white" style="width: 27rem; height: 12rem;">
-      <img src="./images/Rat.png" class="card-img-to" alt="...">
-      <div class="card-body">
-        <h5 class="card-title text-white">La zone des Rats</h5>
-        <p class="card-text text-white">Retrouvez toutes les offres du moment !</p>
-
-      </div>
-    </div>
-
-  </div>
-
-
-
+<div class="commandes">
+    <h2>
+        Commandes
+    </h2>
+</div>
+<div class="shf">
+<div id="suivre">
+    <h5>
+        suivre une commande
+    </h5>
+</div>
+<div id="historique">
+    <h5>
+        historique des commandes
+    </h5>
+</div>
+<div id="factures">
+    <h5>
+        factures
+    </h5>
+</div>
+</div>
+<br><br><br><br>
 
 
 
@@ -99,60 +99,24 @@
 
 
 
-
-  <br><br><br><br><br>
-
-
-
-
-  <div id="reco">
-    <h2>Ils nous recomandent : <img src="./images/reco.jpg" alt="reco" width="80" height="80"></h2>
-    <hr>
-    <br><br><br>
-
-    <div class="cartes d-flex justify-content-around">
-      <div class="card position-static" style="width: 18rem;">
-        <img src="./images/new chat potté.png" class="card-img-top w-70 h-700" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Le Chat Potté</h5>
-          <p class="card-text">Achetez sur le site s'il vous plait arriba arriba (accent méxicain). Miaou</p>
-        </div>
-      </div>
-      <div class="card position-static" style="width: 18rem;">
-        <img src="./images/simba.jpg" class="card-img-top w-70h-70" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Simba</h5>
-          <p class="card-text">Je recommande ce site je m'allume tout les soirs avec mes frères Timon et Pumba</p>
-        </div>
-      </div>
-      <div class="card position-static" style="width: 18rem;">
-        <img src="./images/tortue ninja.jpg" class="card-img-top w-70h-70" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Michelangelo</h5>
-          <p class="card-text">Livraison même dans les égoûts, je recommande surtout le goût pizza </p>
-        </div>
-
-      </div>
-      <div class="cartes d-flex justify-content-around">
-        <div class="card position-static" style="width: 18rem;">
-          <img src="./images/bart.jpg" class="card-img-top w-70h-70" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bart Simpson</h5>
-            <p class="card-text">Livraison même à Springfield j'ai adoré le goût "piège", j'en ai mit dans la vapoteuse
-              d'Homer </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
+</div>
 
 
 
 
-  <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <footer>
     <div id="bas">
@@ -167,18 +131,16 @@
             Réglementation de la Protection des Données
         </div>
         <div class="Paiement mt-3">
-            <a id="primary">Paiements 100% sécurisés</a><br>
+            <a id="primary">Paiement 100% sécurisé</a><br>
             Paiement en 3/4 fois sans frais dès 80€<br>
-            Livraison offerte à partir de 30€
+            Livraison à partir de 30€
         </div>
-        <div class="SAV mt-3">
-            <a id="primary">Service après vente</a><br>
-            <a  href="Questions.html">Foire aux questions</a><br>
-            <a  href="Questions.html">Contact</a>
+        <div class="SAV mt-3" href="Questions.html">
+            <a id="primary" href="./Questions.html">SAV / FAQ</a><br>
         </div>
         <div class="apropos mt-3">
-            <a id="primary">A propos de nous</a><br>
-            <a href="./aboutus.html">Qui sommes-nous ?</a>
+            <a id="primary" href="./aboutus.html" >A propos</a><br>
+            Qui sommes-nous ?
         </div>
         <div class="logos mt-2">
             <a href="https://twitter.com/chefsvapoteurs"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
@@ -201,11 +163,11 @@
                 </svg>
             </div>
         </div>
-  </footer>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <script src="./Neige/neige.js"></script>
-</body>
+    
+  </body>
 
-</html>
+  </html>
