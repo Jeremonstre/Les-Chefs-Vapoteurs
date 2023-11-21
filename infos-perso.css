@@ -1,0 +1,71 @@
+.infos{
+    width: 460px;
+    height: 490px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    margin-left: 30px;
+}
+.fid{
+    width: 460px;
+    height: 100px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+}
+.paie{
+    width: 460px;
+    height: 300px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+}
+.commandes{
+    width: 1600px;
+    height: 600px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+#suivre{
+    width: 460px;
+    height: 490px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+#historique{
+    width: 460px;
+    height: 490px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+#factures{
+    width: 460px;
+    height: 490px;
+    padding: 25px;
+    border: 5px solid ;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+.shf{
+    display: flex;
+    justify-content: space-around;
+}
