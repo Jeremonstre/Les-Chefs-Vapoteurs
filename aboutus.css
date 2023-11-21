@@ -1,6 +1,8 @@
 body {
     font-family: 'Lily Script One';
     margin: 0;
+    background-image: url('./images/BG.png');
+    background-size: 100%;
   }
   
   html {
@@ -19,8 +21,8 @@ body {
   }
   
   .card {
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-    background-color: black;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     margin: 8px;
     margin-top: 25px;
     border: 0;
@@ -43,7 +45,7 @@ body {
 
   .about-section {
     padding: 10px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     border-radius: 25px;
     margin-bottom: 25px;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect V2</title>
+    <link rel="stylesheet" href="connect2.css">
+    <link rel="stylesheet" href="Fonts/fonts.css">
+</head>
+<body>
+    <button id="plh" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connexion / Inscription</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./images/chef qui vapote.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Nom d'Utilisateur</b></label>
+          <input id="plh" type="text" placeholder="Nom d'Utilisateur" name="uname" required>
+    
+          <label for="psw"><b>Mot de Passe</b></label>
+          <input id="plh" type="password" placeholder="Mot de Passe" name="psw"  required>
+            
+          <button id="plh" type="submit">Connexion</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
+          </label>
+        </div>
+    
+        <div class="cont" style="background-color:black">
+          <button id="plh" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+          <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
+        </div>
+      </form>
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./images/chef qui vapote.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Nom d'Utilisateur</b></label>
+          <input id="plh" type="text" placeholder="Nom d'Utilisateur" name="uname" required>
+    
+          <label for="psw"><b>Mot de Passe</b></label>
+          <input id="plh" type="password" placeholder="Mot de Passe" name="psw"  required>
+            
+          <button id="plh" type="submit">Connexion</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
+          </label>
+        </div>
+    
+        <div class="cont" style="background-color:black">
+          <button id="plh" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+          <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>

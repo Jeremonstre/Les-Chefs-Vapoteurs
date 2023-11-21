@@ -4,8 +4,10 @@
   
   #header {
       width: 100%;
-      height: 15%;
-      background-image: url("images/ban.png");
+      max-height: 15%;
+      background-image: url("images/ban2.png");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
       position: static;
       margin-bottom: 0;
   }
