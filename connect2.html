@@ -14,8 +14,9 @@
       
       <form class="modal-content animate" action="/action_page.php" method="post">
         <div class="imgcontainer"><h1>Connexion</h1>
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
           <img src="./images/logo.png" alt="logo" class="avatar">
+          <h2>L'entrée des habitués</h2>
         </div>
     
         <div class="container">
@@ -24,17 +25,20 @@
     
           <label for="psw"><b>Mot de Passe</b></label>
           <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"  required>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Se rappeler de moi ?
+          </label><br>
             
           <button id="plh" type="submit">Connexion</button>
           <label>
-            <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
+            <span class="psw"><a href="password.html" target="_blank">Mot de passe oublié ?</a></span>
           </label>
         </div>
       </form>
       <form class="modal-content animate" action="/action_page.php" method="post">
         <div class="imgcontainer"><h1>Inscription</h1>
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="./images/logo.png" alt="Avatar" class="avatar">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
+          <h2>C'est votre première fois parmis nous ?</h2>
         </div>
     
         <div class="container">
@@ -49,17 +53,12 @@
 
           <label for="uname"><b>Date de naissance</b></label>
           <input id="plh" type="date"  name="birth" required>
+
+                <p>En créant un compte chez nous vous acceptez nos <a href="blabla.html" target="_blank" style="color:dodgerblue">Conditions d'utilisation</a>.</p>
             
           <button id="plh" type="submit">Je m'inscris</button>
         </div>
       </form>
-      <div id="message">
-        <h3>Password must contain the following:</h3>
-        <p id="letter" class="invalid">A <b>Lettres</b>Minuscules</p>
-        <p id="capital" class="invalid">A <b>Lettres</b> Majuscules</p>
-        <p id="number" class="invalid">A <b>nombres</b></p>
-        <p id="length" class="invalid">Minimum <b>8 caractères</b></p>
-      </div>
     </div>
 
     <script>

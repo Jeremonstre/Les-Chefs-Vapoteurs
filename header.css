@@ -20,7 +20,13 @@
       margin-top: 3%;
     }
 
-
+#blabla{
+  display: block;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 15%;
+  text-align: center;
+}
 
 a:link {color: white;background-color: transparent;text-decoration: none;}
 a:visited {color: white;background-color: transparent;text-decoration: none;}
