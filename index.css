@@ -1,8 +1,9 @@
 body{
-    background-image: url('./images/BG2.png');
+    background-image: url('./images/BG.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
+    color: white;
 }
 
 
