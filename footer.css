@@ -22,8 +22,9 @@ footer {
   left: 0;
   right: 0;
   font-size: 14px;
-  border-top: 3px solid white;
-  border-radius: 25px;
+  border-top: 5px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 #bas {
