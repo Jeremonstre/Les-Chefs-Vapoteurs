@@ -1,3 +1,4 @@
+
 body{
     background-image: url('./images/BG.png');
     background-size: 100%;
@@ -16,10 +17,13 @@ h3 {
 figure {
     margin-left: 20%;
 }
-hr {
-    border: 4px solid black;
 
+
+#goutn {
+    margin-left: 12%;
 }
+
+
 #pa {
     margin-right:20%;
 }
@@ -39,6 +43,9 @@ hr {
 .card-img-to {
     height: 90px;
     width: 90px;
-    
+}
+
+.card {
+    border: 5px solid white ;
 }
 
