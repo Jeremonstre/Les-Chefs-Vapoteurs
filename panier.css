@@ -1,5 +1,4 @@
-@media (min-width: 1025px) {
-    .h-custom {
-    height: 100vh !important;
-    }
+    body{
+        background-image: url(./images/BG.png);
+        background-size: 100%;
     }
