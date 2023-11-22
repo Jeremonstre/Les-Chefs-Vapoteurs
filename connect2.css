@@ -10,6 +10,12 @@ body {
   color: white
 }
 
+#H2{
+  color: black;
+  font-size: 30px;
+  margin-top: 12px;
+}
+
 #lgo{
   border-radius: 50%;
   margin-top: 45px;
@@ -27,7 +33,7 @@ input[type=text], input[type=password], input[type=email], input[type=date] {
 }
 
 /* Set a style for all buttons */
-button {
+button{
   background-color: black;
   color: white;
   padding: 14px 20px;
@@ -72,6 +78,11 @@ img.avatar {
 }
 
 .cdt.a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  .cdt.a {
     color: black;
     text-decoration: none;
   }

@@ -17,7 +17,8 @@ hr {
 .container {
   max-width: 800px; 
   margin: 1em auto; 
-  background:#FFF; 
+  background:black; 
+  color: antiquewhite;
   padding:30px;
   border-radius:5px;
 }
@@ -26,10 +27,11 @@ hr {
 }
 .product {
   padding:1em; 
-  border:1px solid #E0E4CC; 
+  border:1px solid white; 
   margin-right:1em; 
   border-radius:5px;
   width: 240px;
+  color: white;
 }
 .cart-container {
   border:1px solid #E0E4CC;
@@ -38,20 +40,22 @@ hr {
   padding:1em;
 }
 button, input[type="submit"] { 
-    border:1px solid white; 
+    border:3px solid white; 
     color:#fff; 
-    background: black; 
+    background: white; 
     padding:0.6em 1em;
     font-size:1em; 
     line-height:1; 
     border-radius: 1.2em;
     transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+   
 }
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
     background: darkred;
-    border-color : black ;
+    border-color : white ;
     color:#fff;
     cursor: pointer;
+    border: 3px solid white;
     
 }
 table {
@@ -90,6 +94,10 @@ table td:nth-last-child(1) {
   margin:1em 0;
 }
 
-img {
-  margin-left: 20%;
+#prdimg{
+  margin-left:20%;
+}
+
+.addtocart {
+  width: 100%;
 }

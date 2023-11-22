@@ -12,8 +12,8 @@
   <link href="/Fonts/fonts.css" rel="stylesheet" type="text/css" />
   <link href="footer.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="./Neige/neige.css">
-  <link rel="stylesheet" href="connect2.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="connect2.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
       <div class="imgcontainer"><h1 id="H">Connexion</h1>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
         <img id="lgo" src="./images/logo.png" alt="logo" class="avatar">
-        <h2>L'entrée des habitués</h2>
+        <h2 id="H2">L'entrée des habitués</h2>
       </div>
       <div id="container1">
         <label for="uname"><b>Nom d'Utilisateur</b></label>
@@ -47,7 +47,7 @@
     <form class="modal-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer"><h1 id="H">Inscription</h1>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
-        <h2>C'est votre première fois parmis nous ?</h2>
+        <h2 id="H2">C'est votre première fois parmis nous ?</h2>
       </div>
   
       <div id="container1">
@@ -73,9 +73,9 @@
     <ul>
       <li><a href="./index.html">Accueil</a></li>
       <li><a href="#">Les Sucrés</a></li>
-      <li><a href="#">Les Fruités</a></li>
+      <li><a href="Fruités.html">Les Fruités</a></li>
       <li><a href="#">Les Plats du Chef</a></li>
-      <li><a href="#">Zone des Rats</a></li>
+      <li><a href="La zone des rats.html">Zone des Rats</a></li>
       <li><img id="actimg"src="./images/account.png" alt="" onclick="document.getElementById('id01').style.display='block'"></li>
       <div class="search-container">
         <form action="#">
@@ -112,7 +112,7 @@
     <div class="card position-static bg-black text-white" style="width: 27rem; height: 12rem;">
       <img src="./images/menu.jpg" class="card-img-to" alt="...">
       <div class="card-body text-white">
-        <h5 class="card-title text-white">Les Plats du Chef !</h5>
+        <h5 class="card-title text-white">Les Plats du Chef/Les Fruités/Les Sucrés</h5>
         <p class="card-text text-white">Rétrouvez les meilleurs repas concoctés par nos chefs !</p>
 
       </div>
@@ -120,8 +120,8 @@
     <div class="card position-static bg-black text-white" style="width: 27rem; height: 12rem;">
       <img src="./images/la cuisine.jpg" class="card-img-to" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-white">Best Sellers</h5>
-        <p class="card-text text-white">Retrouvez vos plats préférés !</p>
+        <h5 class="card-title text-white">Espace Fidélité</h5>
+        <p class="card-text text-white">Profitez d'avantages exceptionnels !</p>
 
       </div>
     </div>
