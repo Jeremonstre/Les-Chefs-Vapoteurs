@@ -22,10 +22,9 @@
     <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200">
   </div>
   <div id="id01" class="modal">
-
+        
     <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
-        <h1 id="H">Connexion</h1>
+      <div class="imgcontainer"><h1 id="H">Connexion</h1>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
         <img id="lgo" src="./images/logo.png" alt="logo" class="avatar">
         <h2 id="H2">L'entrée des habitués</h2>
@@ -33,48 +32,44 @@
       <div id="container1">
         <label for="uname"><b>Nom d'Utilisateur</b></label>
         <input id="plh" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
-
+  
         <label for="psw"><b>Mot de Passe</b></label>
-        <input id="plh" type="password" placeholder="Mot de Passe..." name="psw" required>
+        <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"  required>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Se rappeler de moi ?
         </label><br>
-
+          
         <button id="plh" type="submit">Connexion</button>
         <label>
-          <span class="psw"><a class="cdt" href="password.html">Mot de passe oublié ?</a></span>
+          <span><a class="psw"href="password.html">Mot de passe oublié ?</a></span>
         </label>
       </div>
     </form>
     <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
-        <h1 id="H">Inscription</h1>
+      <div class="imgcontainer"><h1 id="H">Inscription</h1>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
         <h2 id="H2">C'est votre première fois parmis nous ?</h2>
       </div>
-
+  
       <div id="container1">
         <label for="mail"><b>E-mail</b></label>
         <input id="plh" type="email" placeholder="E-mail..." name="mail" required>
-
+        
         <label for="uname"><b>Nom d'Utilisateur</b></label>
         <input id="plh" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
-
+  
         <label for="psw"><b>Mot de Passe</b></label>
-        <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
+        <input id="plh" type="password" placeholder="Mot de Passe..." name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
 
         <label for="uname"><b>Date de naissance</b></label>
-        <input id="plh" type="date" name="birth" required>
+        <input id="plh" type="date"  name="birth" required>
 
-        <p>En créant un compte chez nous vous acceptez nos <a class="cdt" href="blabla.html" target="_blank"
-            style="color:dodgerblue">Conditions d'utilisation</a>.</p>
-
+              <p>En créant un compte chez nous vous acceptez nos <a class="cdt" href="blabla.html" target="_blank" style="color:dodgerblue">Conditions d'utilisation</a>.</p>
+          
         <button id="plh" type="submit">Je m'inscris</button>
       </div>
     </form>
-  </div>
+</div>
   <nav id="menu">
     <ul>
       <li><a href="./index.html">Accueil</a></li>

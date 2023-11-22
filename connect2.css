@@ -77,15 +77,30 @@ img.avatar {
     font-family: 'Lily Script One';
 }
 
-.cdt.a:visited {
+a.psw:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a.psw {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 25px;
+}
+
+a.cdt:visited {
     color: black;
     text-decoration: none;
   }
 
-  .cdt.a {
+  a.cdt {
     color: black;
     text-decoration: none;
+    text-align: center;
   }
+
+
 
 .cont {
     padding: 20px;
