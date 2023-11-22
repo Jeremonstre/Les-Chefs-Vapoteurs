@@ -94,10 +94,12 @@ table td:nth-last-child(1) {
   margin:1em 0;
 }
 
-#prdimg{
+#prod{
   margin-left:20%;
 }
-
+#rat{
+  margin-left: 3%;
+}
 .addtocart {
   width: 100%;
 }
