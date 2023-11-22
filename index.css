@@ -48,4 +48,19 @@ figure {
 .card {
     border: 5px solid white ;
 }
+#carou {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    position: static;
+    margin-left: 10%;
+    
+}
 
+figure.imgld {
+    display: flex;
+justify-content: space-around;
+margin: 0;
+}
