@@ -33,8 +33,8 @@
     padding: 25px;
     border: 5px solid ;
     border-radius: 25px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 #historique{
     width: 460px;
@@ -42,8 +42,8 @@
     padding: 25px;
     border: 5px solid ;
     border-radius: 25px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 #factures{
     width: 460px;
@@ -51,10 +51,17 @@
     padding: 25px;
     border: 5px solid ;
     border-radius: 25px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .shf{
     display: flex;
     justify-content: space-around;
+}
+body{
+    background-image: url("./images/BG.png");
+    background-size: 100%;
+}
+#com{
+    font-size: 70px
 }
