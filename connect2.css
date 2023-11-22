@@ -165,7 +165,15 @@ span.psw {
   }
 }
 #actimg{
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   cursor: pointer;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+#actimg:active {
+  background-color: black;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
 }
