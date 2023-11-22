@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="Fonts/fonts.css">
 </head>
 <body>
-    <button id="plh" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connexion / Inscription</button>
-    
+    <img id="actimg"src="./images/account.png" alt="" onclick="document.getElementById('id01').style.display='block'">
     <div id="id01" class="modal">
       
       <form class="modal-content animate" action="/action_page.php" method="post">
@@ -19,7 +18,7 @@
           <h2>L'entrée des habitués</h2>
         </div>
     
-        <div class="container">
+        <div id="container1">
           <label for="uname"><b>Nom d'Utilisateur</b></label>
           <input id="plh" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
     
@@ -31,7 +30,7 @@
             
           <button id="plh" type="submit">Connexion</button>
           <label>
-            <span class="psw"><a href="password.html" target="_blank">Mot de passe oublié ?</a></span>
+            <span class="psw"><a href="password.html">Mot de passe oublié ?</a></span>
           </label>
         </div>
       </form>
@@ -41,7 +40,7 @@
           <h2>C'est votre première fois parmis nous ?</h2>
         </div>
     
-        <div class="container">
+        <div id="container1">
           <label for="mail"><b>E-mail</b></label>
           <input id="plh" type="email" placeholder="E-mail..." name="mail" required>
           

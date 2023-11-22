@@ -62,7 +62,7 @@ img.avatar {
   width: 25%;
 }
 
-.container {
+#container1 {
   padding: 16px;
   border-radius: 25px;
 }
@@ -163,4 +163,17 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+#actimg{
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+#actimg:active {
+  background-color: black;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
 }

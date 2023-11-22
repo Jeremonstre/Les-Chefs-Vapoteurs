@@ -7,36 +7,31 @@
   <link rel="icon" type="image/x-icon" href=".//images/logo.ico">
   <title>Les Chefs Vapoteurs - infos-perso</title>
   <link rel="stylesheet" href="infos-perso.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="header.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-  <link href="./Fonts/fonts.css" rel="stylesheet" type="text/css" />
   <link href="footer.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="./Neige/neige.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="Fonts/fonts.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div id="header">
-    <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200">
-    <img id="promo" src="./images/promo.png" alt="-20%" width="200" height="200">
-  </div>
-  <nav id="menu">
-    <ul>
-      <li><a href="./index.html">Accueil</a></li>
-      <li><a href="#">Les Sucrés</a></li>
-      <li><a href="#">Les Fruités</a></li>
-      <li><a href="#">Les Plats du Chef</a></li>
-      <li><a href="#">Zone des Rats</a></li>
-      <li><a href="./connect.html">Mon Compte</a></li>
-      <div class="search-container">
-        <form action="#">
-          <input type="text" placeholder="Rechercher..." name="search">
-        </form>
+    <div id="header">
+        <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200">
       </div>
-    </ul>
-  </nav>
+      <nav id="menu">
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="#">Les Sucrés</a></li>
+          <li><a href="#">Les Fruités</a></li>
+          <li><a href="#">Les Plats du Chef</a></li>
+          <li><a href="#">Zone des Rats</a></li>
+          <li><a href="./connect.html">Mon Compte</a></li>
+          <div class="search-container">
+            <form action="#">
+              <input type="text1" placeholder="Rechercher..." name="search">
+            </form>
+          </div>
+        </ul>
+      </nav>
 <div class="all">
     <div id="perso">
 <div class="infos">
@@ -64,13 +59,13 @@
     </h5> <br><br><br>
 </div>
 </div>
-<br><br><br>
+<br><br>
 
 <div class="commandes">
-    <h2>
+    <h1 id="com">
         Commandes
-    </h2>
-</div>
+    </h1>
+</div> <br>
 <div class="shf">
 <div id="suivre">
     <h5>
@@ -118,7 +113,7 @@
 
 
 
-  <footer>
+<footer>
     <div id="bas">
         <div class="Contacts mt-3">
             <a id="primary" href="./aboutus.html">Nos contacts</a><br>
@@ -131,16 +126,18 @@
             Réglementation de la Protection des Données
         </div>
         <div class="Paiement mt-3">
-            <a id="primary">Paiement 100% sécurisé</a><br>
+            <a id="primary">Paiements 100% sécurisés</a><br>
             Paiement en 3/4 fois sans frais dès 80€<br>
-            Livraison à partir de 30€
+            Livraison offerte à partir de 30€
         </div>
-        <div class="SAV mt-3" href="Questions.html">
-            <a id="primary" href="./Questions.html">SAV / FAQ</a><br>
+        <div class="SAV mt-3">
+            <a id="primary">Service après vente</a><br>
+            <a  href="Questions.html">Foire aux questions</a><br>
+            <a  href="Questions.html">Contact</a>
         </div>
         <div class="apropos mt-3">
-            <a id="primary" href="./aboutus.html" >A propos</a><br>
-            Qui sommes-nous ?
+            <a id="primary">A propos de nous</a><br>
+            <a href="./aboutus.html">Qui sommes-nous ?</a>
         </div>
         <div class="logos mt-2">
             <a href="https://twitter.com/chefsvapoteurs"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
@@ -163,7 +160,7 @@
                 </svg>
             </div>
         </div>
-</footer>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
