@@ -26,7 +26,6 @@ h5 {
     text-align: center;
     justify-content: center;
 }
-* {box-sizing: border-box;}
 
 input[type=text], select, textarea {
   width: 100%;
