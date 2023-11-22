@@ -94,10 +94,18 @@ table td:nth-last-child(1) {
   margin:1em 0;
 }
 
-#prdimg{
+#prod{
   margin-left:20%;
 }
 
 .addtocart {
   width: 100%;
+}
+
+.preduc {
+  text-decoration : line-through;
+  color: white;
+}
+#rat {
+  margin-left: 3%;
 }
