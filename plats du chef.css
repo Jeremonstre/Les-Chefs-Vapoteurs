@@ -97,7 +97,9 @@ table td:nth-last-child(1) {
 #prod{
   margin-left:20%;
 }
-
+#rat{
+  margin-left: 3%;
+}
 .addtocart {
   width: 100%;
 }
