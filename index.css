@@ -32,6 +32,9 @@ figure {
     margin-right: 30%;
     width: 20;
 }
+hr {
+    border: solid 2px;
+}
 
 #présentation {
     display: flex;
@@ -43,6 +46,8 @@ figure {
 .card-img-to {
     height: 90px;
     width: 90px;
+    background-color: black;
+    color: white;
 }
 
 .card {
