@@ -46,16 +46,16 @@
     padding: 3rem 2rem;
   }
   
-  #my-form {
+  #register {
     padding: 2rem;
     background: #f4f4f4;
   }
   
-  #my-form label {
+  #register label {
     display: block;
   }
   
-  #my-form input[type="text"] {
+  #register input[type="text"], input[type="password"], input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
