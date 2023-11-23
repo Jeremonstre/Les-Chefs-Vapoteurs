@@ -51,7 +51,7 @@ button, input[type="submit"] {
    
 }
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
-    background: darkred;
+    background: goldenrod;
     border-color : white ;
     color:#fff;
     cursor: pointer;
@@ -61,7 +61,7 @@ button:hover, button:focus, button:active, input[type="submit"]:hover, input[typ
 }
 
 #bou {
-  background: darkred;
+  background: goldenrod;
   border-color : white ;
   color:#fff;
   cursor: pointer;
@@ -106,6 +106,7 @@ table td:nth-last-child(1) {
 
 #panier {
   margin-left: 90%;
+  margin-top: -7%;
 }
 #prod{
   margin-left:20%;
