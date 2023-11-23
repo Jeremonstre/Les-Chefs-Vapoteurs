@@ -78,14 +78,17 @@ function login(e) {
     var checkuser = localStorage.getItem("username");
   var checkpass = localStorage.getItem("password");
   if (checkuser === user2.value && checkpass === pass2.value) {
-    document.getElementById("demo").innerHTML = "You are now logged in.";
-    isConnected =true
+    document.getElementById("demog").innerHTML = "Connexion Réussie !";
+    let isConnected = true
     window.location.assign('./index.html')
   } else {
-    document.getElementById("demo").innerHTML =
-      "Incorrect username and password";
-    isConnected=false
+    document.getElementById("demob").innerHTML =
+      "Nom d'Utilisateur ou Mot de passe Incorrect...";
+    let isConnected = false
   }
   console.log(isConnected.value)
 }
 
+
+connex = sessionStorage
+sessionStorage.setItem("isConnected", isConnected.value);
