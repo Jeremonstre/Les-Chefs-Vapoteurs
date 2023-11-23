@@ -10,6 +10,17 @@ body {
   color: white;
   border-bottom: 10px solid black;
 }
+b{
+  color:black;
+}
+
+#remember{
+  color:black
+}
+
+input{
+  color: black;
+}
 
 #H1{
   color: black;
@@ -27,6 +38,7 @@ input[type="checkbox"]{
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 30px;
+  color:black;
 
 }
 #lgo{
