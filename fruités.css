@@ -46,17 +46,20 @@ button, input[type="submit"] {
     padding:0.6em 1em;
     font-size:1em; 
     line-height:1; 
+    background-color : black ;
+    border-radius: 20%;
     border-radius: 1.2em;
     transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
    
 }
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
     background: goldenrod;
-    border-color : white ;
+    background-color : black ;
     color:#fff;
     cursor: pointer;
     border: 3px solid white;
     width: -50%;
+    
     
 }
 
