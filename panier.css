@@ -1,4 +1,4 @@
-    body{
-        background-image: url(./images/BG.png);
-        background-size: 100%;
-    }
+ * {
+    background-color: black;
+    color: white;
+ }

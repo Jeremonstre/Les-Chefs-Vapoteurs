@@ -56,7 +56,17 @@ button:hover, button:focus, button:active, input[type="submit"]:hover, input[typ
     color:#fff;
     cursor: pointer;
     border: 3px solid white;
+    width: -50%;
     
+}
+
+#bou {
+  background: darkred;
+  border-color : white ;
+  color:#fff;
+  cursor: pointer;
+  border: 3px solid white;
+  width: 100%;
 }
 table {
   margin-bottom:1em;
@@ -72,12 +82,12 @@ table td, table th {
   margin-left:auto;
 }
 .cart-buttons {
-  width:auto;
+  width:40%;
   margin-right:0;
-  margin-left:auto;
-  display:flex;
-  justify-content:flex-end;
+  margin-left:40%;
   padding:1em 0;
+  display: flex;
+  justify-content: space-between;
 }
 #emptycart {
   margin-right:1em;
@@ -94,6 +104,9 @@ table td:nth-last-child(1) {
   margin:1em 0;
 }
 
+#panier {
+  margin-left: 90%;
+}
 #prod{
   margin-left:20%;
 }
@@ -104,7 +117,7 @@ table td:nth-last-child(1) {
 
 .preduc {
   text-decoration : line-through;
-  color: white;
+  color: black;
 }
 #rat {
   margin-left: 3%;
