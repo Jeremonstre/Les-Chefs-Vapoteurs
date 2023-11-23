@@ -40,16 +40,13 @@ hr {
   padding:1em;
 }
 button, input[type="submit"] { 
-    border:3px solid white; 
-    color:#fff; 
-    background: white; 
-    padding:0.6em 1em;
-    font-size:1em; 
-    line-height:1; 
-    background-color : black ;
-    border-radius: 20%;
-    border-radius: 1.2em;
-    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+    
    
 }
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
@@ -59,6 +56,7 @@ button:hover, button:focus, button:active, input[type="submit"]:hover, input[typ
     cursor: pointer;
     border: 3px solid white;
     width: -50%;
+    
     
     
 }
