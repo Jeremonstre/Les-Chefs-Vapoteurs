@@ -7,7 +7,14 @@ body {
 #H{
   background-color: black;
   margin: 0;
-  color: white
+  color: white;
+  border-bottom: 10px solid black;
+}
+
+#H1{
+  color: black;
+  font-size: 30px;
+  margin-top: 9%;
 }
 
 #H2{
@@ -16,13 +23,20 @@ body {
   margin-top: 12px;
 }
 
+input[type="checkbox"]{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+
+}
 #lgo{
-  border-radius: 50%;
-  margin-top: 45px;
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 80%;
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password], input[type=email], input[type=date] {
+input[type=text], input[type=password], input[type=email]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -33,7 +47,7 @@ input[type=text], input[type=password], input[type=email], input[type=date] {
 }
 
 /* Set a style for all buttons */
-button{
+.btn{
   background-color: black;
   color: white;
   padding: 14px 20px;
@@ -45,7 +59,7 @@ button{
   font-size: 17px;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -65,16 +79,25 @@ button:hover {
 }
 
 img.avatar {
-  width: 25%;
+  width: 30%;
+  border-radius: 100%;
 }
 
 #container1 {
   padding: 16px;
   border-radius: 25px;
+  margin-bottom: 5%;
 }
 
-#plh{
+#plh ,#Luname, #Lpsw, #email, #birthday, #uname, #psw{
     font-family: 'Lily Script One';
+}
+
+#sub, #connect{
+  margin-left:25%;
+  margin-right: 25%;
+  width: 50%;
+  font-family: 'Lily Script One';
 }
 
 a.psw:visited {
@@ -94,12 +117,11 @@ a.cdt:visited {
     text-decoration: none;
   }
 
-  a.cdt {
+  a.cdt{
     color: black;
     text-decoration: none;
     text-align: center;
   }
-
 
 
 .cont {
@@ -110,12 +132,13 @@ a.cdt:visited {
 
 span.psw {
   float: right;
-  padding-top: 16px;
 }
 
 .psw{
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  width: 50%;
   color: black;
   font-family: 'Lily Script One';
   font-size: 20px;
@@ -140,7 +163,6 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto;
   border: 5px solid black;
   width: 35%;
   border-radius: 25px;
