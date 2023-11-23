@@ -64,3 +64,14 @@ figure.imgld {
 justify-content: space-around;
 margin: 0;
 }
+
+#img1{
+   border: 5px solid white;
+border-radius: 25px; 
+}
+
+#img2{
+    border: 5px solid white;
+    border-radius: 25px; 
+}
+
