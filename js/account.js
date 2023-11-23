@@ -64,11 +64,11 @@ function onSubmit(e) {
   }
 }
 
+var isConnected = Boolean
 const Login = document.querySelector("#Login");
 const LnameInput = document.querySelector("#Luname");
 const LpassInput = document.querySelector("#Lpsw");
 Login.addEventListener("submit", login);
-console.log(localStorage);
 
 
 function login(e) {
@@ -79,16 +79,19 @@ function login(e) {
   var checkpass = localStorage.getItem("password");
   if (checkuser === user2.value && checkpass === pass2.value) {
     document.getElementById("demog").innerHTML = "Connexion Réussie !";
-    let isConnected = true
+    localStorage.setItem("isConnected", true)
     window.location.assign('./index.html')
   } else {
     document.getElementById("demob").innerHTML =
       "Nom d'Utilisateur ou Mot de passe Incorrect...";
-    let isConnected = false
+      localStorage.setItem("isConnected", false)
   }
-  console.log(isConnected.value)
 }
 
+accountbtn = document.getElementById("actimg")
+console.log(document.getElementById("actimg"))
+if (isConnected=true) {
+  document.getElementById("actimg").innerHTML = `<img id="actimg"src="./images/account.png" alt="" href="./infos-perso.html">`;
+} else {
+}
 
-connex = sessionStorage
-sessionStorage.setItem("isConnected", isConnected.value);

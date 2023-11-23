@@ -33,13 +33,13 @@ input{
 #H1{
   color: black;
   font-size: 30px;
-  margin-top: 9%;
+  margin-top: 2%;
 }
 
 #H2{
   color: black;
   font-size: 30px;
-  margin-top: 12px;
+  padding: 15px;
 }
 
 input[type="checkbox"]{
@@ -52,7 +52,7 @@ input[type="checkbox"]{
 #lgo{
   border-radius: 25px;
   margin-top: 30px;
-  width: 80%;
+  width: 65%;
 }
 
 /* Full-width input fields */
@@ -67,7 +67,7 @@ input[type=text], input[type=password], input[type=email]{
 }
 
 /* Set a style for all buttons */
-.btn{
+.btn:not(#pay){
   background-color: black;
   color: white;
   padding: 14px 20px;
@@ -98,18 +98,15 @@ input[type=text], input[type=password], input[type=email]{
   position: relative;
 }
 
-img.avatar {
-  width: 30%;
-  border-radius: 100%;
-}
-
 #container1 {
-  padding: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
   border-radius: 25px;
-  margin-bottom: 5%;
+  
 }
 
-#plh ,#Luname, #Lpsw, #email, #birthday, #uname, #psw{
+#plh ,#Luname, #Lpsw, #email, #birthday, #uname{
     font-family: 'Lily Script One';
 }
 
@@ -119,27 +116,36 @@ img.avatar {
   width: 50%;
   font-family: 'Lily Script One';
 }
+.psw{
+  float: right;
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+.cdt{
+  text-decoration: underline;
+}
 
 a.psw:visited {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
+  text-align: center;
 }
 
 a.psw {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
   text-align: center;
-  margin-left: 25px;
 }
 
 a.cdt:visited {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   a.cdt{
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     text-align: center;
   }
 
@@ -149,20 +155,6 @@ a.cdt:visited {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
-
-span.psw {
-  float: right;
-}
-
-.psw{
-  margin-top: 10px;
-  margin-right: 20%;
-  margin-bottom: 1%;
-  width: 50%;
-  color: black;
-  font-family: 'Lily Script One';
-  font-size: 20px;
-}
 
 /* The Modal (background) */
 .modal {
@@ -187,7 +179,7 @@ span.psw {
   width: 35%;
   border-radius: 25px;
   display : inline-block;
-  margin-left: 9%;
+  margin-left: 10%;
 }
 
 /* The Close Button (x) */

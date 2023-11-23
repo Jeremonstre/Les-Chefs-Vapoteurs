@@ -33,39 +33,38 @@
       
           <div id="container1">
             <label for="Luname"><b>Nom d'Utilisateur</b></label>
-            <input id="Luname" type="text" placeholder="Nom d'Utilisateur..." name="Luname" required>
+            <input id="Luname" type="text" placeholder="Nom d'Utilisateur..." name="Luname" autocomplete="username" required>
       
             <label for="Lpsw"><b>Mot de Passe</b></label>
-            <input id="Lpsw" type="password" placeholder="Mot de Passe..." name="Lpsw"  required>
-            <label>
-              <input id="remember" type="checkbox" checked="checked" name="remember">Se rappeler de moi ?
-            </label>
+            <input id="Lpsw" type="password" placeholder="Mot de Passe..." name="Lpsw" autocomplete="current-password" required><br>
+            
+            <label id="remember">
+              <input  type="checkbox" checked="checked" name="remember"> Se rappeler de moi ?
+            </label> 
+            <a class="psw" href="password.html">Mot de passe oublié ?</a>
             <input id ="connect" class="btn" type="submit" value="Connexion"></input>
-            <label>
-              <span class="psw"><a class="psw" href="password.html">Mot de passe oublié ?</a></span>
-            </label>
           </div>
         </form>
         <form id="register" class="modal-content animate"  method="post" action="connect2.html">
           <div class="imgcontainer"><h1 id="H">Inscription</h1>
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
-            <h2 id="H1">C'est votre première fois parmis nous ?</h2>
+            <h2 id="H1">Inscrivez vous ici !</h2>
           </div>
       
           <div id="container1">
             <div class="msg"></div>
             <label for="email"><b>E-mail</b></label>
-            <input id="email" type="email" placeholder="E-mail..." name="email" required>
+            <input id="email" type="email" placeholder="E-mail..." name="email" autocomplete="email" required>
             
             <label for="uname"><b>Nom d'Utilisateur</b></label>
-            <input id="uname" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
+            <input id="uname" type="text" placeholder="Nom d'Utilisateur..." name="uname" autocomplete="username" required>
       
             <label for="psw"><b>Mot de Passe</b></label>
-            <input id="psw" type="password" placeholder="Mot de Passe..." name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
+            <input id="psw" type="password" placeholder="Mot de Passe..." name="psw" autocomplete="current-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
     
             <label for="birthday"><b>Date de naissance</b></label>
             <input id="birthday" type="text"  name="birthday" placeholder="DD/MM/XXXX" required>
-                  <p>En créant un compte chez nous vous acceptez nos <a href="blabla.html" target="_blank" style="color:black">Conditions d'utilisation</a>.</p>
+                  <p>En créant un compte, vous acceptez nos <a href="blabla.html" target="_blank" style="color:black; text-decoration: underline;">Conditions d'utilisation</a>.</p>
             <input id="sub"class="btn" type="submit" value="S'inscrire"></input>
           </div>
         </form>
@@ -89,7 +88,7 @@
 
       <div class="container" style="color: white">
         <h1 style="text-align: center;">Les Gourmands</h1>
-        <a href="./panier.html"> <img src="./images/checkout.png" width="80" height="80" id="panier"></a>
+        <a href="./panier.html"> <img src="./images/checkout.png" alt="checkout" width="80" height="80" id="panier"></a>
         <br><br>
         <div id="flex">
           <div id="alerts"></div>
@@ -199,9 +198,9 @@
           <br><br>
 
           <div class="accordion accordion-flush bg-black text-black" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <div class="accordion-item rounded-pill">
+              <h2 class="accordion-header rounded-pill" id="flush-headingOne">
+                <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Panier
                 </button>

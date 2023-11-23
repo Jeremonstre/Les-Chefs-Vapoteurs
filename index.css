@@ -2,7 +2,6 @@
 body{
     background-image: url('./images/BG.png');
     background-size: 100%;
-    background-repeat: no-repeat;
     background-color: black;
 }
 
@@ -18,7 +17,18 @@ figure {
     margin-left: 20%;
 }
 
+#tof{
+    border-radius: 50px;
+    border: 5px solid white;
+    
+}
 
+#rec{
+    border-bottom-right-radius: 25px;
+    border:5px solid white;
+    border-top:0;
+    border-left:0;
+}
 #goutn {
     margin-left: 12%;
 }
