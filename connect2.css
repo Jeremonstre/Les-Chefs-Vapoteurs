@@ -4,6 +4,14 @@ body {
   background-size: 100%;
 }
 
+#demog{
+  color:green;
+}
+
+#demob{
+  color: darkred;
+}
+
 #H{
   background-color: black;
   margin: 0;
