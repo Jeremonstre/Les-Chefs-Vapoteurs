@@ -9,14 +9,13 @@
     padding: 13px 70px;
     border-radius: 18px;
     text-decoration: none;
-    
     font-weight: 500;
 }
 
 .pop_up {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: fixed; 
     left: 0;
     top: 0;
     background-color: transparent;

@@ -64,11 +64,11 @@ function onSubmit(e) {
   }
 }
 
+var isConnected = Boolean
 const Login = document.querySelector("#Login");
 const LnameInput = document.querySelector("#Luname");
 const LpassInput = document.querySelector("#Lpsw");
 Login.addEventListener("submit", login);
-console.log(localStorage);
 
 
 function login(e) {
@@ -79,16 +79,35 @@ function login(e) {
   var checkpass = localStorage.getItem("password");
   if (checkuser === user2.value && checkpass === pass2.value) {
     document.getElementById("demog").innerHTML = "Connexion Réussie !";
-    let isConnected = true
+    localStorage.setItem("isConnected", true)
     window.location.assign('./index.html')
   } else {
     document.getElementById("demob").innerHTML =
-      "Nom d'Utilisateur ou Mot de passe Incorrect...";
-    let isConnected = false
+    "Nom d'Utilisateur ou Mot de passe Incorrect...";
+    localStorage.setItem("isConnected", false)
   }
-  console.log(isConnected.value)
 }
 
 
-connex = sessionStorage
-sessionStorage.setItem("isConnected", isConnected.value);
+
+var connex = localStorage.getItem("isConnected", Boolean)
+console.log(connex)
+
+if (localStorage.getItem("isConnected", Boolean) === true) {
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick','goto()')
+}else{
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
+}
+
+function goto(){
+  window.location.assign('./infos-perso.html')}
+
+
+function logout(){
+  localStorage.setItem("isConnected", Boolean=false)
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
+  window.location.assign('index.html')
+}

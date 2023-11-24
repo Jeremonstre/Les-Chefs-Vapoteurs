@@ -13,15 +13,14 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="./Fonts/fonts.css">
-  <link rel="stylesheet" href="./connect2.css">
   <link rel="stylesheet" href="./paiement.css">
+  <link rel="stylesheet" href="./connect2.css">
 
 </head>
 
 <body style="background-color: black;">
   <div id="header">
     <a href="./index.html"> <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200"></a>
-
   </div>
   <div id="id01" class="modal">
     
@@ -35,39 +34,38 @@
   
       <div id="container1">
         <label for="Luname"><b>Nom d'Utilisateur</b></label>
-        <input id="Luname" type="text" placeholder="Nom d'Utilisateur..." name="Luname" required>
+        <input id="Luname" type="text" placeholder="Nom d'Utilisateur..." name="Luname" autocomplete="username" required>
   
         <label for="Lpsw"><b>Mot de Passe</b></label>
-        <input id="Lpsw" type="password" placeholder="Mot de Passe..." name="Lpsw"  required>
-        <label>
-          <input id="remember" type="checkbox" checked="checked" name="remember">Se rappeler de moi ?
-        </label>
+        <input id="Lpsw" type="password" placeholder="Mot de Passe..." name="Lpsw" autocomplete="current-password" required><br>
+        
+        <label id="remember">
+          <input  type="checkbox" checked="checked" name="remember"> Se rappeler de moi ?
+        </label> 
+        <a class="psw" href="password.html">Mot de passe oublié ?</a>
         <input id ="connect" class="btn" type="submit" value="Connexion"></input>
-        <label>
-          <span class="psw"><a class="psw" href="password.html">Mot de passe oublié ?</a></span>
-        </label>
       </div>
     </form>
     <form id="register" class="modal-content animate"  method="post" action="connect2.html">
       <div class="imgcontainer"><h1 id="H">Inscription</h1>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
-        <h2 id="H1">C'est votre première fois parmis nous ?</h2>
+        <h2 id="H1">Inscrivez vous ici !</h2>
       </div>
   
       <div id="container1">
         <div class="msg"></div>
         <label for="email"><b>E-mail</b></label>
-        <input id="email" type="email" placeholder="E-mail..." name="email" required>
+        <input id="email" type="email" placeholder="E-mail..." name="email" autocomplete="email" required>
         
         <label for="uname"><b>Nom d'Utilisateur</b></label>
-        <input id="uname" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
+        <input id="uname" type="text" placeholder="Nom d'Utilisateur..." name="uname" autocomplete="username" required>
   
         <label for="psw"><b>Mot de Passe</b></label>
-        <input id="psw" type="password" placeholder="Mot de Passe..." name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
+        <input id="psw" type="password" placeholder="Mot de Passe..." name="psw" autocomplete="current-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
 
         <label for="birthday"><b>Date de naissance</b></label>
         <input id="birthday" type="text"  name="birthday" placeholder="DD/MM/XXXX" required>
-              <p>En créant un compte chez nous vous acceptez nos <a href="blabla.html" target="_blank" style="color:black">Conditions d'utilisation</a>.</p>
+              <p>En créant un compte, vous acceptez nos <a href="blabla.html" target="_blank" style="color:black; text-decoration: underline;">Conditions d'utilisation</a>.</p>
         <input id="sub"class="btn" type="submit" value="S'inscrire"></input>
       </div>
     </form>
@@ -79,11 +77,10 @@
       <li><a href="Fruités.html">Les Fruités</a></li>
       <li><a href="Les plats du Chefs.html">Les Plats du Chef</a></li>
       <li><a href="La zone des rats.html">Zone des Rats</a></li>
-      <li><img id="actimg" src="./images/account.png" alt=""
-          onclick="document.getElementById('id01').style.display='block'"></li>
+      <li><img id="actimg" src="./images/account.png" alt="" onclick="document.getElementById('id01').style.display='block'"></li>
       <div class="search-container">
         <form action="#">
-          <input type="text1" placeholder="Rechercher..." name="search">
+          <input id="rch"type="text1" placeholder="Rechercher..." name="search">
         </form>
       </div>
     </ul>
@@ -134,7 +131,7 @@
 
         <div class="wrapper">
           <div class="button">
-              <a href="#" id="open_pop_up">Payer</a>
+              <a id="pay"href="#" id="open_pop_up">Payer</a>
           </div>
           <div id="pop_up" class="pop_up">
               <div class="pop_up_container">
@@ -167,7 +164,7 @@
                               </div>
                           </div>
                           <div class="btn">
-                              <button type="submit" style="margin-left: 70px;">Payer</button>
+                              <button  type="submit" style="margin-left: 70px;">Payer</button>
                           </div>
                       </div>
                       <div class="pop_up_close" id="pop_up_close">

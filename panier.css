@@ -1,10 +1,6 @@
- * {
-    background-color: black;
-    color: white;
-   
- }
-
  #pan {
+  background-color: black;
+    color: white;
    width: 85%;
    margin-left: 6%;
  }

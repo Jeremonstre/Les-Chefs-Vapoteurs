@@ -20,7 +20,7 @@ hr {
   background:black; 
   color: antiquewhite;
   padding:30px;
-  border-radius:5px;
+  border-radius:25px;
 }
 .productcont {
   display: flex; 
