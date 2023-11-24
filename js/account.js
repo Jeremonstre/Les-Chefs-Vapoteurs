@@ -79,12 +79,12 @@ function login(e) {
   var checkpass = localStorage.getItem("password");
   if (checkuser === user2.value && checkpass === pass2.value) {
     document.getElementById("demog").innerHTML = "Connexion Réussie !";
-    localStorage.setItem("isConnected", true)
-    window.location.assign('./index.html')
+    localStorage.setItem("isConnected", Boolean===true)
+    window.location.assign('./infos-perso.html')
   } else {
     document.getElementById("demob").innerHTML =
     "Nom d'Utilisateur ou Mot de passe Incorrect...";
-    localStorage.setItem("isConnected", false)
+    localStorage.setItem("isConnected", Boolean===false)
   }
 }
 
@@ -93,21 +93,22 @@ function login(e) {
 var connex = localStorage.getItem("isConnected", Boolean)
 console.log(connex)
 
-if (localStorage.getItem("isConnected", Boolean) === true) {
-  document.getElementById('actimg').removeAttribute('onclick');
-  document.getElementById('actimg').setAttribute('onclick','goto()')
-}else{
-  document.getElementById('actimg').removeAttribute('onclick');
-  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
-}
 
 function goto(){
   window.location.assign('./infos-perso.html')}
 
 
 function logout(){
-  localStorage.setItem("isConnected", Boolean=false)
+  localStorage.setItem("isConnected", Boolean===false)
   document.getElementById('actimg').removeAttribute('onclick');
   document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
   window.location.assign('index.html')
 }
+
+
+
+
+
+document.getElementById("UNAME").innerHTML =`${localStorage.getItem("username", nameInput.value)}`;
+document.getElementById("MAIL").innerHTML =`${localStorage.getItem("email", emailInput.value)}`;
+document.getElementById("BIRTH").innerHTML =`${localStorage.getItem("birthday", birthInput.value)}`;

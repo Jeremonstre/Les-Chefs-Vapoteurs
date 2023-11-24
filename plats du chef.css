@@ -20,7 +20,7 @@ hr {
   background:black; 
   color: antiquewhite;
   padding:30px;
-  border-radius:5px;
+  border-radius:25px;
 }
 .productcont {
   display: flex; 
@@ -111,6 +111,7 @@ table td:nth-last-child(1) {
 }
 #prod{
   margin-left:20%;
+  border-radius: 25px;
 }
 
 .addtocart {

@@ -111,6 +111,7 @@ table td:nth-last-child(1) {
 }
 #prod{
   margin-left:20%;
+  border-radius: 25px;
 }
 
 .addtocart {
