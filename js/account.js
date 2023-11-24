@@ -83,15 +83,31 @@ function login(e) {
     window.location.assign('./index.html')
   } else {
     document.getElementById("demob").innerHTML =
-      "Nom d'Utilisateur ou Mot de passe Incorrect...";
-      localStorage.setItem("isConnected", false)
+    "Nom d'Utilisateur ou Mot de passe Incorrect...";
+    localStorage.setItem("isConnected", false)
   }
 }
 
-accountbtn = document.getElementById("actimg")
-console.log(document.getElementById("actimg"))
-if (isConnected=true) {
-  document.getElementById("actimg").innerHTML = `<img id="actimg"src="./images/account.png" alt="" href="./infos-perso.html">`;
-} else {
+
+
+var connex = localStorage.getItem("isConnected", Boolean)
+console.log(connex)
+
+if (localStorage.getItem("isConnected", Boolean) === true) {
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick','goto()')
+}else{
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
 }
 
+function goto(){
+  window.location.assign('./infos-perso.html')}
+
+
+function logout(){
+  localStorage.setItem("isConnected", Boolean=false)
+  document.getElementById('actimg').removeAttribute('onclick');
+  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
+  window.location.assign('index.html')
+}

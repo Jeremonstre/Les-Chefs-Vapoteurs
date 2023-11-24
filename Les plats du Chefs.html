@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCV - Les Plats du Chef</title>
+    <link rel="icon" type="image/x-icon" href=".//images/logo.ico">
+    <link rel="stylesheet" href="./plats du chef.css">
+    <link rel="stylesheet" href="./Limiteage/age.css">
+    <link href="header.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fumée.css">
+    <link href="./Fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="./footer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="connect2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="./index.html"> <img id="logo" src="./images/logo.png" alt="Logo LCV" width="200" height="200"></a>
+   
+    </div>
+    <div id="id01" class="modal">
+    
+        <form id="Login" class="modal-content animate"  method="post">
+          <div class="imgcontainer"><h1 id="H">Connexion</h1>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
+            <img id="lgo" src="./images/chefban.png" alt="logo" class="avatar">
+            <h2 id="H2">L'entrée des habitués</h2>
+            <div id="demog"></div> <div id="demob"></div>
+          </div>
+      
+          <div id="container1">
+            <label for="Luname"><b>Nom d'Utilisateur</b></label>
+            <input id="Luname" type="text" placeholder="Nom d'Utilisateur..." name="Luname" required>
+      
+            <label for="Lpsw"><b>Mot de Passe</b></label>
+            <input id="Lpsw" type="password" placeholder="Mot de Passe..." name="Lpsw"  required>
+            <label>
+              <input id="remember" type="checkbox" checked="checked" name="remember">Se rappeler de moi ?
+            </label>
+            <input id ="connect" class="btn" type="submit" value="Connexion"></input>
+            <label>
+              <span class="psw"><a class="psw" href="password.html">Mot de passe oublié ?</a></span>
+            </label>
+          </div>
+        </form>
+        <form id="register" class="modal-content animate"  method="post" action="connect2.html">
+          <div class="imgcontainer"><h1 id="H">Inscription</h1>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
+            <h2 id="H1">C'est votre première fois parmis nous ?</h2>
+          </div>
+      
+          <div id="container1">
+            <div class="msg"></div>
+            <label for="email"><b>E-mail</b></label>
+            <input id="email" type="email" placeholder="E-mail..." name="email" required>
+            
+            <label for="uname"><b>Nom d'Utilisateur</b></label>
+            <input id="uname" type="text" placeholder="Nom d'Utilisateur..." name="uname" required>
+      
+            <label for="psw"><b>Mot de Passe</b></label>
+            <input id="psw" type="password" placeholder="Mot de Passe..." name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères, majuscule, minuscule et nombre" required>
+    
+            <label for="birthday"><b>Date de naissance</b></label>
+            <input id="birthday" type="text"  name="birthday" placeholder="DD/MM/XXXX" required>
+                  <p>En créant un compte chez nous vous acceptez nos <a href="blabla.html" target="_blank" style="color:black">Conditions d'utilisation</a>.</p>
+            <input id="sub"class="btn" type="submit" value="S'inscrire"></input>
+          </div>
+        </form>
+      </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="Gourmands.html">Les Gourmands</a></li>
+            <li><a href="Fruités.html">Les Fruités</a></li>
+            <li><a href="Les plats du Chefs.html">Les Plats du Chef</a></li>
+            <li><a href="La zone des rats.html">Zone des Rats</a></li>
+            <li><img id="actimg" src="./images/account.png" alt=""
+                    onclick="document.getElementById('id01').style.display='block'"></li>
+            <div class="search-container">
+                <form action="#">
+                    <input type="text1" placeholder="Rechercher..." name="search">
+                </form>
+            </div>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="container" style="color: white">
+        <h1 style="text-align: center;">Les Plats du Chef</h1>
+        <a href="./panier.html"> <img src="./images/checkout.png" width="80" height="80" id="panier"></a>
+        <br><br>
+        <div id="flex">
+            <div id="alerts"></div>
+            <div class="productcont" style="color: white">
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/gout noel.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Barbe du père Noel</h3>
+                    <p style="color: white">Saveurs de Barbe de père Noel, crème anglaise </p>
+                    <p class="price" style="color: white">€12.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/Stephen curry mango.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Stephen Curry Mango</h3>
+                    <p style="color: white">Saveurs de Mangue, sauce curry et sueur du champion</p>
+                    <p class="price" style="color: red">€9,99 
+                        <a href="./La zone des rats.html"> <img src="./images/Rat.png" width="30" height="30" id="rat"></a>
+                    </p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/umbrella.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Umbrella</h3>
+                    <p style="color: white">Saveurs de Zombies et d'eau de Pluie</p>
+                    <p class="price" style="color: white">€19.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/mbappe totu.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Mappé TOTY</h3>
+                    <p style="color: white">Saveurs de noisette et sueur du champion</p>
+                    <p class="price" style="color: red">€9,99
+                        <a href="./La zone des rats.html"><img src="./images/Rat.png" width="30" height="30" id="rat"></p></a>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/frappe des tenebres.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Frappe des ténèbres</h3>
+                    <p style="color: white">Saveurs d'électricité et d'acier</p>
+                    <p class="price" style="color: white">€11.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div id="flex">
+            <div id="alerts"></div>
+            <div class="productcont" style="color: white">
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/ch'ti.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Ch'ti</h3>
+                    <p style="color: white">Saveurs de frites, de bière et de maroille</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/l'alcoolique.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">L'alcoolique</h3>
+                    <p style="color: white">Saveurs de Vodka et de Redbull</p>
+                    <p class="price" style="color: white">€9.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/diable.png" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Le Diable</h3>
+                    <p style="color: white">Saveurs de Carolina Reaper et de feu</p>
+                    <p class="price" style="color: white">€19.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/mjolnir.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Marteau de Thor</h3>
+                    <p style="color: white">Saveurs de Marteau et de vikings</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/dragon.png" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Fumée du dragon</h3>
+                    <p style="color: white">Saveurs de fumée de dragon glacée</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div id="flex">
+            <div id="alerts"></div>
+            <div class="productcont" style="color: white">
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/Le parrain.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Le parrain</h3>
+                    <p style="color: white">Saveurs d'armes et de bandits</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/pizz.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Gout Michelangelo</h3>
+                    <p style="color: white">Saveurs de pizza peperoni aux 40 fromages</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/pumpkin.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Pumpkin</h3>
+                    <p style="color: white">Saveur de Citrouille effrayante</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/sauce du chef.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Sauce du Chef</h3>
+                    <p style="color: white">Saveur mystère conconté par le chef</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+                <div class="product" style="color: white">
+                    <img src="./images/plat du chef/vador.jpg" width="130" height="130" id="prod">
+                    <br><br>
+                    <h3 class="productname" style="color: white">Vador</h3>
+                    <p style="color: white">Saveurs spatiale et de méchant papa</p>
+                    <p class="price" style="color: white">€10.99</p>
+                    <button class="addtocart">Ajouter au panier</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <div class="accordion accordion-flush bg-black text-black" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Panier
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse bg-black text-white" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-black text-white"><div class="cart-container">
+              <h2>Panier</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th><strong>Plats</strong></th>
+                    <th><strong>Prix</strong></th>
+                  </tr>
+                </thead>
+                <tbody id="carttable" style="color: white">
+                </tbody>
+              </table>
+              <hr>
+              <table id="carttotals" style="color: white">
+                <tr>
+                  <td><strong>Produits</strong></td>
+                  <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                  <td>x <span id="itemsquantity">0</span></td>
+      
+                  <td>€<span id="total">0</span></td>
+                </tr>
+              </table>
+      
+      
+              <div class="cart-buttons" id="Bou">
+                <button id="emptycart" style="margin-top: 6%;">Vider le Panier</button>
+                <form action="./panier.html"> <br>
+                  <button id="checkout" style="width: 100%;">Checkout</button></a>
+                </form>
+      
+      
+              </div>
+            </div>
+          
+              </div>
+            </div>
+      
+            </div>
+          </div>
+    </div>
+    <br>
+    <br><br><br>
+
+    <footer>
+        <div id="bas">
+          <div class="Contacts mt-3">
+            <a id="primary" href="./aboutus.html">Nos contacts</a><br>
+            03.27.55.42.69 <br>
+            leschefs.vapoteurs@lcv.com <br>
+            42 rue du shlag 59000 Lille <br>
+          </div>
+          <div class="CGV mt-3">
+            <a id="primary" href="./blabla.html">Conditions d'utilisations générales</a><br>
+            Réglementation de la Protection des Données
+          </div>
+          <div class="Paiement mt-3">
+            <a id="primary">Paiements 100% sécurisés</a><br>
+            Paiement en 3/4 fois sans frais dès 80€<br>
+            Livraison offerte à partir de 30€
+          </div>
+          <div class="SAV mt-3">
+            <a id="primary">Service après vente</a><br>
+            <a href="Questions.html">Foire aux questions</a><br>
+            <a href="Questions.html">Contact</a>
+          </div>
+          <div class="apropos mt-3">
+            <a id="primary">A propos de nous</a><br>
+            <a href="./aboutus.html">Qui sommes-nous ?</a>
+          </div>
+          <div class="logos mt-2">
+            <a href="https://twitter.com/chefsvapoteurs" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                height="36" fill="currentColor" class="bi bi-twitter-x m-1 p-1" viewBox="0 0 16 16">
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+              </svg></a>
+            <div class="logos">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-instagram m-1 p-1" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+            </div>
+            <div class="logos mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-facebook m-1 p-1" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </div>
+          </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      
+      <script src="./js/account.js"></script>
+    <script src="./La zone des Rats.js"></script>
+</body>
+
+</html>
