@@ -55,6 +55,7 @@ function onSubmit(e) {
     localStorage.setItem("password", passInput.value);
     localStorage.setItem("email", emailInput.value);
     localStorage.setItem("birthday", birthInput.value);
+    document.getElementById("demos").innerHTML ="Création de compte réussie !";
 
     console.log(nameInput.value);
     console.log(emailInput.value);
@@ -99,9 +100,6 @@ function goto(){
 
 
 function logout(){
-  localStorage.setItem("isConnected", Boolean===false)
-  document.getElementById('actimg').removeAttribute('onclick');
-  document.getElementById('actimg').setAttribute('onclick',"document.getElementById('id01').style.display='block'")
   window.location.assign('index.html')
 }
 

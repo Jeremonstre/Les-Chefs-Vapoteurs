@@ -4,12 +4,14 @@ body {
   background-size: 100%;
 }
 
-#demog{
+#demog, #demos{
   color:green;
+  text-align: center;
 }
 
 #demob{
   color: darkred;
+  text-align: center;
 }
 
 #H{
